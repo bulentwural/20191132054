@@ -1,0 +1,26 @@
+<table class="table table-striped mt-5 ml-4 mr-4">
+    <thead>
+        <tr>
+            <th scope="col">Markası</th>
+            <th scope="col">Modeli</th>
+            <th scope="col">Yılı</th>
+            <th scope="col">Kasa</th>
+            <th scope="col">Yakıt</th>
+            <th scope="col">Vites</th>
+            <th scope="col">Fiyat</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let arac of araclar">
+            <td>{{arac.marka}}</td>
+            <td>{{arac.model}}</td>
+            <td>{{arac.yil}}</td>
+            <td>{{arac.kasatip}}</td>
+            <td>{{arac.yakittip}}</td>
+            <td>{{arac.vites}}</td>
+            <td>{{arac.fiyat}}</td>
+            <td><button class="btn btn-danger btn-sm" (click)="Sil(arac)">Sil</button></td>
+        </tr>
+    </tbody>
+</table>

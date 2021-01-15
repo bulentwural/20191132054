@@ -1,0 +1,20 @@
+<div class="row ml-5 mt-5 mr-5 ">
+    <div class="col-md-4 mb-3" *ngFor="let arac of araclar">
+        <div class="card" style="width: 22rem;">
+            <img src="{{arac.resimUrl}}" class="card-img-top" alt="..." width="300" height="200">
+            <div class="card-body">
+                <ul class="list-group">
+                    <li class="list-group-item">Markası : {{arac.marka}}</li>
+                    <li class="list-group-item">Model : {{arac.model}}</li>
+                    <li class="list-group-item">Yılı : {{arac.yil}}</li>
+                    <li class="list-group-item">Vites : {{arac.vites}}</li>
+                    <li class="list-group-item">Yakıt : {{arac.yakittip}}</li>
+                    <li class="list-group-item">Kasa : {{arac.kasatip}}</li>
+                    <li class="list-group-item">Fiyat : {{arac.fiyat}} TL</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Kirala</a>
+            </div>
+        </div>
+    </div>
+
+</div>

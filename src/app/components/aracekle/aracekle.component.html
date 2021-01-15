@@ -1,0 +1,57 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12">
+
+            <button class="btn btn-outline-primary" [routerLink]="['/']">Kayıtları Listele</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+
+            <form #frm="ngForm" (ngSubmit)="Kaydet()">
+                <div class="card mt-3">
+                    <div class="card-header">
+                        <h4>Kayıt Ekle</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label>Araç Markası</label>
+                            <input type="text" class="form-control" name="marka" [(ngModel)]="secArac.marka" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Araç Modeli</label>
+                            <input type="text" class="form-control" name="model" [(ngModel)]="secArac.model" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Araç Resmi</label>
+                            <input type="text" class="form-control" name="model" [(ngModel)]="secArac.resimUrl" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Araç Yılı</label>
+                            <input type="text" class="form-control" name="yil" [(ngModel)]="secArac.yil" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Yakıt Tipi</label>
+                            <input type="text" class="form-control" name="yakittip" [(ngModel)]="secArac.yakittip" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Fiyat</label>
+                            <input type="number" class="form-control" name="fiyat" [(ngModel)]="secArac.fiyat" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Vites</label>
+                            <input type="text" class="form-control" name="vites" [(ngModel)]="secArac.vites" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Kasa Tipi</label>
+                            <input type="text" class="form-control" name="kasatip" [(ngModel)]="secArac.kasatip" required>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <input type="submit" value="Kaydet" class="btn btn-outline-success" [disabled]="frm.invalid">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
